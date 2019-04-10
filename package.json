@@ -1,0 +1,61 @@
+{
+  "name": "theme-webpack",
+  "version": "0.0.2",
+  "description": "Webpack base for frontend dev",
+  "author": "Jim Chestnutt <info@jimchestnutt.co.uk>",
+  "config": {
+    "proxy": "http://webpack.test"
+  },
+  "scripts": {
+    "start": "webpack --watch --mode=development --display=minimal --config=./webpack.dev.config.js",
+    "build": "webpack --mode=production --display=minimal --config=./webpack.prod.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.7",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cache-loader": "^2.0.1",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.8",
+    "file-loader": "^3.0.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "ignore-loader": "^0.1.2",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "minimatch": "^3.0.4",
+    "node-sass": "^4.11.0",
+    "node-sass-glob-importer": "^5.3.0",
+    "normalize-scss": "^7.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.5.0",
+    "querystring": "^0.2.0",
+    "resolve-url-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "scrollmagic": "^2.0.6",
+    "slick-carousel": "^1.8.1",
+    "style-loader": "^0.23.1",
+    "terser": "~3.14.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-middleware": "^3.5.1",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-manifest-plugin": "^2.0.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "> 2%",
+    "last 2 versions",
+    "ie >= 11"
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* $. Base Imports - Normalize, etc
+\*----------------------------------------------------------------*/
+
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+
+/* $. Vendors that expose mixins
+\*----------------------------------------------------------------*/
+
+@import "sass/vendors/animateCSS/config";
+
+/* $. Base - Variables, global mixins and styles, core components - buttons etc.
+\*----------------------------------------------------------------*/
+
+@import "sass/mixins/**/*.scss";
+@import "sass/vars";
+@import "sass/core/**/*.scss";
+
+/* $. Vendors reliant on mixins - Slick, etc.
+\*----------------------------------------------------------------*/
+
+@import "sass/vendors/slick";
+
+/* $. Components - using globbing, so components must not rely on load order
+\*----------------------------------------------------------------*/
+@import "../components/**/*.scss";
